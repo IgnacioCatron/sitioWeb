@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>proyecto</title>
+    <title>Portafolio Ignacio Catrón</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
@@ -15,12 +15,149 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+      <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
+
 </head>
 
-<body style="font-family: Orbitron, sans-serif;background-size: contain;">
-    <nav class="navbar navbar-light navbar-expand-md shadow-sm navigation-clean" style="padding: 5px;background: #001619;">
+<style type="text/css">
+
+    .card-header {
+        background-color: black;
+    }
+
+    .card-header button {
+        color:#00bfd9 ;
+    }
+
+    .card-body a {
+        color:#00bfd9 ;
+    }
+
+    .habilidades div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habilidades strong {
+        color: cyan;
+    }
+
+    .listaEjercicios {
+
+        color: white;
+        font-family: montserrat;
+        padding: 1%;
+        
+    }
+    .listaEjercicios:hover {
+        color: cyan;
+    }
+
+    .heading {
+        width: 100%!important;
+        max-width: 100%;
+
+    }
+
+    .heading a {
+        font-size: 1.5em;
+        color: #001619;
+    }
+
+    .heading i {
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    .footer-nav a{  
+        color: #001619;
+    }
+
+    @media (max-width: 1250px) {
+    .row-about {
+        flex-direction: column;
+    }
+
+    .heading {
+            display: flex;
+            justify-content: center;
+    }
+
+    .centrar-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about {
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+    }
+
+    .footer {  
+        text-align: center;
+    }
+
+    .heading a {
+        font-size: 1em;
+        color: #001619;
+}
+
+#uno {
+    padding: 2%;
+}
+.habilidades {
+    flex-wrap: nowrap;
+}
+
+}
+
+</style>
+
+
+
+<body style="font-family: Orbitron, sans-serif;">
+   
+    <div class="container row text-center justify-content-start align-items-center heading"> 
+        <div class="col-lg-4 centrar-logo" data-aos="zoom-in"><img class="d-flex justify-content-start" data-aos="slide-down" data-aos-duration="1650" style="width: 150px;" src="assets/img/logo.png" ></div>
+        <div class="col-lg-4" data-aos="zoom-in"><i class="fa fa-envelope-o"></i><a href="mailto:ignaciocatronhenriquez@gmail.com">ignaciocatronhenriquez@gmail.com</a></div>
+        <div class="col-lg-4" data-aos="zoom-in"> 
+
+                       <div class="text-center col">
+                            <a href="https://github.com/IgnacioCatron/"><i class="fa fa-github border-white" style="padding: 1%;font-size: 22px;color: rgb(1,161,185);"></i></a>
+                            <a href="https://www.linkedin.com/in/ignaciocatron/"><i class="fa fa-linkedin-square border-white" style="padding: 1%;font-size: 22px;color: rgb(1,161,185);"></i></a>
+                    
+                        </div>
+        </div>
+        
+
+    </div>
+
+    <nav class="navbar navbar-light navbar-expand-md shadow-sm navigation-clean sticky-top " style="padding: 5px;background: #001619;">
+        
         <div class="container">
             <a class="navbar-brand float-left" style="color: rgb(255,255,255);margin: 0;" href="#">
+                
+     
+               </a>
+                <button data-toggle="collapse" class="navbar-toggler text-center" data-target="#navcol-1"
+                style="width: 43px;padding: 0;margin: 0;box-shadow: 0px 0px rgb(255,255,255);text-shadow: 0px 0px rgb(255,0,0);filter: invert(100%);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-delay="450" href="#uno">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-delay="450" href="#dos">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-delay="500" href="#tres">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-delay="550" data-toggle="modal" data-target="#contacto" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        
+        </div>
+    </nav>
+
+
                 <div class="modal fade" role="dialog" tabindex="-1" id="contacto" style="/*z-index: 1000;*/" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -34,25 +171,117 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn-toolbar d-xl-flex justify-content-xl-end" style="position: fixed!important;top: 70vh;right: 0;z-index: 99;">
-                    <div class="btn-group-vertical d-xl-flex" role="group"><a class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" role="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2600" style="padding: 5%;background-color: rgb(1,95,110);border-radius: 15px 0 0 15px!important;border-color: #02adc7;margin-top: 1%;margin-bottom: 1%;"
-                            href="#">&nbsp;&nbsp;<i class="fa fa-whatsapp" style="font-size: 32px;"></i></a><a class="btn btn-primary d-xl-flex justify-content-xl-center" role="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2700" style="padding: 5%;width: 64px;background-color: rgb(1,95,110);border-radius: 15px 0 0 15px!important;border-color: #02adc7;margin-top: 1%;margin-bottom: 1%;"
-                            href="#">&nbsp;<i class="fa fa-phone" style="font-size: 32px;"></i></a><a class="btn btn-primary d-xl-flex justify-content-xl-center" role="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2800" style="padding: 5%;width: 64px;background-color: rgb(1,95,110);border-radius: 15px 0 0 15px!important;border-color: #02adc7;margin-top: 1%;margin-bottom: 1%;"
-                            href="#">&nbsp;<i class="fa fa-envelope-o" style="font-size: 32px;"></i></a></div>
-                </div><img class="d-flex justify-content-start" data-aos="slide-down" data-aos-duration="1650" style="width: 300PX;" src="assets/img/logo5.png" width="70%"></a><button data-toggle="collapse" class="navbar-toggler text-center" data-target="#navcol-1"
-                style="width: 43px;padding: 0;margin: 0;box-shadow: 0px 0px rgb(255,255,255);text-shadow: 0px 0px rgb(255,0,0);filter: invert(100%);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-delay="450" href="#dos">Acerca de</a></li>
-                    <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-delay="500" href="#tres">Portafolio</a></li>
-                    <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-delay="550" data-toggle="modal" data-target="#contacto" href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 flex-shrink-1 flex-fill align-items-center align-content-end align-self-stretch align-items-sm-center align-items-md-center align-items-lg-center" style="background-size: cover;background-repeat: no-repeat;background-attachment: fixed;background-position: center;color: #177ce1;height: 91vh;background-color: #ffffff;">
-        <div class="container text-primary d-flex d-lg-flex flex-fill justify-content-center align-items-center align-content-center align-items-md-center align-items-lg-center" data-aos="flip-down" data-aos-duration="700" data-aos-delay="1300" style="background-color: rgba(255,255,255,0.98);">
+
+
+
+               <div class="modal fade" role="dialog" tabindex="-1" id="ejercicios" style="/*z-index: 1000;*/" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="color: rgb(5,97,112);">Ejercicios y aplicaciones</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                            <div class="modal-body">
+                                            
+
+
+                                    <div id="accordion">
+                                      <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                          <h5 class="mb-0">
+                                            <button class="btn btn-link " data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                              Que Sembrar
+                                            </button>
+                                          </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                          <div class="card-body">
+                                            <p>Una guia practica para saber que sembrar en cada mes del año, ademas de consejos de cultivo como riego, sol y asociaciones</p>
+                                            <img style="width:100%"src="./assets/img/que-sembrar.jpg">
+                                            <a href="https://ignaciocatron.github.io/que-sembrar/">Ver</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                          <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Memorice
+                                            </button>
+                                          </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                          <div class="card-body">
+                                           <p>Juego de memoria donde se deben encontrar las imagenes pares</p>
+                                            <img style="width:100%"src="./assets/img/memorice.jpg">
+                                            <a href="https://memorice-flax.vercel.app/">Ver</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                          <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Yerbatero
+                                            </button>
+                                          </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                          <div class="card-body">
+                                            <p>Una guia practica para saber que plantas medicinales pueden servir para distintas dolencias</p>
+                                            <img style="width:100%"src="./assets/img/yerbatero.jpg">
+                                            <a href="https://ignaciocatron.github.io/yerbatero/">Ver</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+
+
+
+                            </div>
+                   
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+               <div class="btn-toolbar d-xl-flex justify-content-xl-end" style="position: fixed!important;top: 70vh;right: 0;z-index: 99;">
+                    <div class="btn-group-vertical d-xl-flex" role="group">
+                       
+                        <a class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" role="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2600" style="padding: 5%;background-color: rgb(1,95,110);border-radius: 15px 0 0 15px!important;border-color: #02adc7;margin-top: 1%;margin-bottom: 1%;"
+                            href="#">&nbsp;&nbsp;<i class="fa fa-whatsapp" style="font-size: 32px; " data-toggle="tooltip" title="Escribir por Whatsapp"></i></a>
+                        
+                        <a class="btn btn-primary d-xl-flex justify-content-xl-center" role="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2700" style="padding: 5%;width: 64px;background-color: rgb(1,95,110);border-radius: 15px 0 0 15px!important;border-color: #02adc7;margin-top: 1%;margin-bottom: 1%;"
+                            href="#">&nbsp;<i class="fa fa-phone" style="font-size: 32px;" data-toggle="tooltip" title="Llamar"></i></a>
+                       
+                        <a class="btn btn-primary d-xl-flex justify-content-xl-center" role="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2800" style="padding: 5%;width: 64px;background-color: rgb(1,95,110);border-radius: 15px 0 0 15px!important;border-color: #02adc7;margin-top: 1%;margin-bottom: 1%;"
+                            href="mailto:ignaciocatronhenriquez@gmail.com">&nbsp;<i class="fa fa-envelope-o" style="font-size: 32px;"data-toggle="tooltip" title="Enviar Correo"></i></a>
+                       
+                        <a href="./assets/docs/CurriculumIgnacio.pdf" class="btn btn-primary d-xl-flex justify-content-xl-center" role="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2800" style="padding: 5%;width: 64px;background-color: rgb(1,95,110);border-radius: 15px 0 0 15px!important;border-color: #02adc7;margin-top: 1%;margin-bottom: 1%;"
+                            href="#">&nbsp;<img src="./assets/img/cv.png" data-toggle="tooltip" title="Ver Curriculum"></a>
+                    </div>
+                </div>
+
+
+
+
+
+    <section class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 flex-shrink-1 flex-fill align-items-center align-content-end align-self-stretch align-items-sm-center align-items-md-center align-items-lg-center" id="uno" style="
+    background-image: url(./assets/img/background.svg);
+    background-size: cover!important;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: #177ce1;
+        height: 70vh;
+        background-color: #ffffff;">
+        <div class="container text-primary d-flex d-lg-flex flex-fill justify-content-center align-items-center align-content-center align-items-md-center align-items-lg-center" data-aos="flip-down" data-aos-duration="700" data-aos-delay="1300" style="border-radius: 15px; background-color: rgba(255,255,255,0.98); box-shadow: 3px 3px 6px gray inset;">
             <div class="row" style="width: 100%;">
                 <div class="col-xl-12 text-center" style="padding: 5%;">
                     <div data-bs-hover-animate="tada"><img data-aos="zoom-in" data-aos-delay="1450" style="width: 128px;" src="assets/img/thank-you.svg"></div>
@@ -60,78 +289,180 @@
                     <p class="text-center" data-aos="fade-left" data-aos-delay="2000" style="color: rgb(1,1,1);">Gracias por visitiar mi sitio web<br></p>
                     <div class="btn-group" role="group"><a class="btn btn-primary align-items-xl-center" role="button" data-aos="zoom-out-right" data-aos-delay="2500" style="border-radius: 50px 0 0 50px;font-size: 16px;background: none;border-color: #01a1b9;font-weight: normal;font-size: 16px;color: #01a1b9;position: relative;/*transition: all 2s ease;*/font-family: Orbitron, sans-serif;"
                             href="#dos">Saber más&nbsp;<i class="fa fa-angle-double-down"></i></a><button class="btn btn-primary d-xl-inline-flex align-items-xl-center" data-aos="zoom-out-left" data-aos-delay="2500" style="border-radius: 0 50px 50px 0;background-color: #015F6E;color: #ffffff;border-color: rgb(3,201,231);font-weight: normal;font-size: 16px;/*transition: all 1s;*//*-moz-transition: all 0.3s;*/"
-                            data-toggle="modal" data-target="#contacto" type="button"><span class="d-xl-flex align-items-xl-center"></span>&nbsp;Contactar&nbsp;<i class="material-icons icon_hide">message</i></button></div>
+                            data-toggle="modal" data-target="#contacto" type="button"><span class="d-xl-flex align-items-xl-center"></span>&nbsp;Contactar&nbsp;<i class="material-icons icon_hide">message</i></button>
+
+
+
+                     </div><br>
+                        <div id="container">
+                                    <button  data-aos="zoom-in" data-aos-delay="3000"onclick="showRandomQuote()" style=" padding: 1%;margin: 10px; border-radius: 50px ; border: 1px;font-size: 16px;background-color: black;border-color: #01a1b9;font-weight: normal;font-size: 16px;color: white;position: relative; font-family: Orbitron, sans-serif;">Ten un consejo</button>
+                                    
+
+                                </div>
+                                <div id="quote" style="display: none; text-align: center; box-shadow: 2px 2px 3px black inset; color:white; background-color: #001619; padding: 5px; font-size:18px; font-family: montserrat; "><p style="margin-bottom: 0; "></p></div>
                 </div>
             </div>
+
         </div>
+
+        
     </section>
+
+
+            <section>
+            
+            <div id="quote" style="height: 10px;text-align: center; box-shadow: 2px 2px 3px black inset; color:white; background-color: black; padding: 5px; font-size:18px; font-family: montserrat; "></div>
+            
+        </section>
+
+
     <div class="text-success"></div>
-    <section class="d-xl-flex align-items-center align-items-xl-center" data-bs-parallax-bg="true" id="dos" style="background-image: url(&quot;assets/img/11673.jpg&quot;);background-position: bottom;">
+    <section class="d-xl-flex align-items-center align-items-xl-center"  id="dos" style="background-image: url(&quot;assets/img/11673.jpg&quot;); background-size: cover!important; background-position: bottom; background-attachment: fixed;">
         <div class="d-xl-flex align-items-xl-center" style="width: 100%;background-color: rgba(0,0,0,0.5);padding-top: 12%;padding-bottom: 12%;">
             <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 col-xl-7 text-right" data-aos="zoom-out" data-aos-duration="600" style="box-shadow: 1px 1px 1px #03c9e7;border-radius: 5px;padding: 3%;background-color: rgba(18,53,59,0.9);">
+                <div class="row row-about" style="flex-wrap: nowrap;">
+                   
+
+                    <div class="col-lg-6 col-xl-7 text-right " data-aos="zoom-out" data-aos-duration="600" style="box-shadow: 1px 1px 1px #03c9e7;padding: 3%;background-color: rgba(0,0,0,0.5);">
                         <div class="text-center d-xl-flex justify-content-xl-center align-items-xl-center" data-aos="fade" style="color: rgba(33,37,41,0);"><img class="border rounded-circle shadow d-xl-flex" style="width: 100px;background-color: #ffffff;" src="assets/img/iconn.jpg"></div>
-                        <h1 class="text-center" data-aos="fade" style="color: rgb(255,255,255);">Acerca de mí</h1>
-                        <p class="text-center" data-aos="fade" data-aos-delay="450" style="color: #02adc7;font-weight: normal;background-color: #0b1f22;font-size: 20px;padding: 1%;">Interés por proyectos sociales, ambientales y educativos&nbsp;<i class="fa fa-leaf" style="color: rgb(255,255,255);"></i></p>
-                        <div data-aos="fade-right" style="padding: 4%;">
-                            <div class="row d-lg-flex d-xl-flex align-items-xl-start">
-                                <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex align-items-start align-items-xl-center" style="padding: 0;"><img style="width: 52px;filter: brightness(200%) saturate(0%);" src="assets/img/diploma.svg" width="32px"></div>
-                                <div class="col d-xl-flex align-items-xl-center">
-                                    <p class="text-left" style="color: rgb(255,255,255);">Titulado en Instituto profesional AIEP como Ingeniero en ejecución informática mención desarrollo de sistemas.<br></p>
+                        <h1 class="text-center" data-aos="fade" style="color: rgb(255,255,255); border-left: 2px solid cyan;">Acerca de mí</h1>
+                        <p class="text-center" data-aos="fade" data-aos-delay="450" style="color: #02adc7;font-weight: normal;background-color: #0b1f22;font-size: 20px;padding: 1%;">Dessarrollador Web Especialista en Front-End <i class="fa fa-leaf" style="color: rgb(255,255,255);"></i></p>
+                            
+                            <div data-aos="fade-right" style="padding: 4%;">
+                                
+
+                         
+                                    <div class="row d-lg-flex d-xl-flex align-items-xl-start about">
+                                    <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex justify-content-end justify-content-xl-center align-items-xl-center">
+                                        <img  data-aos="fade-right" data-aos-delay="850"  src="assets/img/diploma.svg" width="32px">                                
+                                    </div>
+                                    <div class="col-10 col-sm-9 col-md-9 col-lg-10 col-xl-11 text-justify about">
+                                        <p class="text-justify" data-aos="fade-left" data-aos-delay="800" style="color: #ffffff;">Soy egresado de Ingeniería Informática en el Instituto Profesional AIEP. Desde el 2019 he dedicado mi carrera a la creación de páginas web dinámicas y atractivas, con una especialización en desarrollo Front-End.</p>
+                                    </div>
+                                    </div>
+
+
+                                            <div class="row d-lg-flex d-xl-flex align-items-xl-start about">
+                                    <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex justify-content-end justify-content-xl-center align-items-xl-center">
+                                        <img  data-aos="fade-right" data-aos-delay="850"  src="assets/img/ux.svg" width="32px">                                
+                                    </div>
+                                    <div class="col-10 col-sm-9 col-md-9 col-lg-10 col-xl-11 text-justify about">
+                                        <p class="text-justify" data-aos="fade-left" data-aos-delay="800" style="color: #ffffff;">Me apasiona el diseño de interfaces de usuario intuitivas y funcionales, utilizando las últimas tecnologías y tendencias en el desarrollo web.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row d-xl-flex align-items-xl-start">
-                                <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex align-items-start align-items-xl-center" style="padding: 0;"><img style="width: 52px;filter: brightness(200%) saturate(0%);" src="assets/img/ux.svg" width="32px"></div>
-                                <div class="col d-xl-flex align-items-xl-center">
-                                    <p class="text-left" style="color: rgb(255,255,255);">Experiencia en interfaces de usuario, diseño y<br>mantención de sitios web responsivos.<br></p>
+    
+
+                                  <div class="row d-lg-flex d-xl-flex align-items-xl-start about">
+                                    <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex justify-content-end justify-content-xl-center align-items-xl-center">
+                                        <img  data-aos="fade-right" data-aos-delay="850"  src="assets/img/solution.svg" width="32px">                                
+                                    </div>
+                                    <div class="col-10 col-sm-9 col-md-9 col-lg-10 col-xl-11 text-justify about">
+                                        <p class="text-justify" data-aos="fade-left" data-aos-delay="800" style="color: #ffffff;">Mis habilidades técnicas incluyen HTML, CSS, JavaScript, y frameworks como React. Además, tengo experiencia en optimización de motores de búsqueda (SEO) y accesibilidad web.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row d-xl-flex align-items-xl-start">
-                                <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex align-items-start align-items-xl-center" style="padding: 0;"><img style="width: 52px;filter: brightness(200%) saturate(0%);" src="assets/img/solution.svg" width="32px"></div>
-                                <div class="col d-xl-flex align-items-xl-center">
-                                    <p class="text-left" style="color: rgb(255,255,255);">Fanático de la resolución de problemas; todo<br>obstáculo tiene una solución, o más de una.<br></p>
+
+                                
+                               <div class="row d-lg-flex d-xl-flex align-items-xl-start about">
+                                    <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex justify-content-end justify-content-xl-center align-items-xl-center">
+                                        <img  data-aos="fade-right" data-aos-delay="850" style="width: 52px;" src="assets/img/nave.png" width="32px">                                
+                                    </div>
+                                    <div class="col-10 col-sm-9 col-md-9 col-lg-10 col-xl-11 text-justify about">
+                                        <p class="text-justify" data-aos="fade-left" data-aos-delay="800" style="color: #ffffff;">Siempre estoy en busca de nuevas oportunidades para aprender y crecer profesionalmente. Si tienes un proyecto en mente, ¡me encantaría saber de él!</p>
+                                    </div>
                                 </div>
+
+
+                                 <div class="row d-lg-flex d-xl-flex align-items-xl-start about">
+                                    <div class="col-2 col-sm-3 col-md-3 col-lg-2 col-xl-1 text-center d-flex d-xl-flex justify-content-end justify-content-xl-center align-items-xl-center">
+                                       <img  data-aos="fade-right" data-aos-delay="850" style="width: 52px;" src="assets/img/gracias.png" width="32px">                                
+                                    </div>
+                                    <div class="col-10 col-sm-9 col-md-9 col-lg-10 col-xl-11 text-justify about">
+                                        <p class="text-justify" data-aos="fade-left" data-aos-delay="850" style="color: #ffffff;">Gracias por tomarte el tiempo de conocerme. ¡Espero que disfrutes de tu visita a mi portafolio web!</p>
+                                    </div>
+                                </div>
+
+
+
                             </div>
-                        </div><a class="text-left" data-aos="fade" style="color: #03c9e7;font-size: 22px;" href="#">Más info</a></div>
-                    <div class="col d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center"><a data-aos="fade-down" data-aos-duration="700" data-aos-delay="800" href="#tres"><i class="fas fa-angle-double-down border-dark bounce animated infinite" style="font-size: 64px;color: #04adc7;margin-top: 48px;padding: 10%;"></i><span></span></a></div>
+                                <a class="text-left" data-aos="fade"  style="color: #03c9e7;font-size: 22px;" href="#tres">Más info</a>
+                            </div>
+
+
+
+                        <div class="col-lg-6 col-xl-7 text-center" data-aos="zoom-out" data-aos-duration="600" style="align-content: center;box-shadow: 1px 1px 1px #03c9e7;padding: 3%;background-color: rgba(0,0,0,0.6);">   
+                                    <h2 style="text-align: center; color: white;">Tecnologías y Habilidades</h2>
+                         
+                                        <div class="row habilidades" style="margin-top: 5%;margin-bottom: 5%;">
+                                            <div    data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4 col-sm"><img  src="./assets/img/html.png"><strong>HTML 5</strong></div>
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4 col-sm"><img  src="./assets/img/css.png"><strong>CSS</strong></div>
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4 col-sm"><img  src="./assets/img/programacion.png"><strong>Javascript</strong></div>
+                                        </div>
+                                        <div class="row habilidades" style="margin-top: 5%;margin-bottom: 5%;">
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/react.png" style="width:64px"><strong>React</strong></div>
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/seo.png"><strong>Optimización SEO</strong></div>
+                                            <div  data-aos="zoom-in" data-aos-duration="1200"class="col-lg-4"><img  src="./assets/img/sql.png"><strong>Bases de Datos</strong></div>
+                                        </div>
+                                        
+                                        <div class="row habilidades" style="margin-top: 5%;margin-bottom: 5%;">
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/ux.png"><strong>Experiencia de Usuario</strong></div>
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/photoshop.png" style="width:64px"><strong>Photoshop</strong></div>
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/illustrator.png"><strong>Illustrator</strong></div>
+                                            
+                                        </div>
+                                        <div class="row habilidades" style="margin-top: 5%;margin-bottom: 5%;">
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/cms.png" style="width:64px"><strong>Gestores de Contenido</strong></div>
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/eng.png"><strong>Inglés</strong></div>
+                                            <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4"><img  src="./assets/img/ia.png"><strong>Ingeniería de Prompts</strong></div>
+                                        </div>
+                        </div>
+                                  
+
                 </div>
+
+
             </div>
         </div>
     </section>
-    <section></section>
+   
     <div class="d-xl-flex projects-horizontal" id="tres" style="padding-top: 10%;padding-bottom: 10%;">
         <div class="container" data-aos="zoom-out" data-aos-duration="750">
             <div class="intro">
-                <h1 class="text-center" style="color: #015f6e;">Portafolio</h1>
+                <h1 class="text-center" style="background-color: #015f6e; color: white; padding: 1%; box-shadow:1px 1px 2px black; border-radius: 15px;">Portafolio</h1>
             </div>
             <div class="row projects">
-                <div class="col-sm-6 item">
+                <div data-aos="zoom-in" data-aos-duration="1200" class="col-sm-6 item">
                     <div class="row">
                         <div class="col-3 col-md-12 col-lg-5 col-xl-3 d-xl-flex align-self-center justify-content-xl-end align-items-xl-center"><a class="d-xl-flex justify-content-xl-center align-items-xl-center" href="#"><img class="img-fluid" style="width: 72px;" src="assets/img/thank-you.svg" width="20%"></a></div>
                         <div class="col">
                             <h3 class="name" style="color: rgb(1,95,110);">Este sitio</h3>
-                            <p class="text-justify description">Realizado utilizando <strong>CSS y bootstrap</strong>; el principal cometido es exhibir distinas técnicas de diseño y tecnologías web.<br></p><a style="font-size: 14px;color: #03c9e7;" href="#">Ver en github&nbsp;<i class="fa fa-github"></i></a></div>
+                            <p class="text-justify description">Realizado utilizando <strong>CSS y bootstrap</strong>; el principal cometido es exhibir distinas técnicas de diseño y tecnologías web.<br></p><a style="font-size: 16px;color: #03c9e7;" href="https://github.com/IgnacioCatron/sitioWeb">Ver en Github&nbsp;<i class="fa fa-github"></i></a></div>
                     </div>
                 </div>
-                <div class="col-sm-6 item">
+                <div data-aos="zoom-in" data-aos-duration="1200" class="col-sm-6 item">
                     <div class="row">
                         <div class="col-3 col-md-12 col-lg-5 col-xl-3 text-center d-flex d-xl-flex align-items-center justify-content-xl-end align-items-xl-center"><a href="#"><img class="img-fluid" style="width: 72px;" src="assets/img/wordpress%20(1).svg"></a></div>
                         <div class="col">
                             <h3 class="name" style="color: rgb(1,95,110);">Wordpress</h3>
-                            <p class="text-justify description">Basta experiencia diseñando sitios web para pequeñas y medianas empresas, <strong>contacto, carrito de compras y pagos digitales.</strong></p><a style="font-size: 14px;color: #03c9e7;" href="#">Ver ejemplo&nbsp;<i class="fa fa-wordpress"></i></a></div>
+                            <p class="text-justify description">Basta experiencia diseñando sitios web para pequeñas y medianas empresas, <strong>contacto, carrito de compras y pagos digitales.</strong></p><a style="font-size: 16px;color: #03c9e7;" href="https://www.heyura.cl/">Ver ejemplo&nbsp;<i class="fa fa-wordpress"></i></a></div>
                     </div>
                 </div>
-                <div class="col-sm-6 item">
+                <div data-aos="zoom-in" data-aos-duration="1200" class="col-sm-6 item">
                     <div class="row">
                         <div class="col-3 col-md-12 col-lg-5 col-xl-3 text-center d-flex d-xl-flex align-items-center justify-content-xl-end align-items-xl-center"><a href="#"><img class="img-fluid" style="width: 72px;" src="assets/img/bag.svg"></a></div>
                         <div class="col">
                             <h3 class="name" style="color: rgb(1,95,110);">Briefcase</h3>
-                            <p class="text-justify description">Distintos trabajos y ejercicios relacionados al desarrollo de sistemas informáticos.</p><a style="font-size: 14px;color: #03c9e7;" href="#">Navegar&nbsp;<i class="fa fa-code"></i></a></div>
+                            <p class="text-justify description">Distintos trabajos y ejercicios relacionados al desarrollo de sistemas informáticos.</p>
+                                <button data-toggle="modal" data-target="#ejercicios" style="border: none; background-color: white; color: #03C9E7"> Navegar&nbsp;<i class="fa fa-code"></i></button>
+
+
+
+
+
+                            </div>
                     </div>
                 </div>
                 <div class="col-sm-6 item">
-                    <div class="row">
+                    <div data-aos="zoom-in" data-aos-duration="1200" class="row">
                         <div class="col-3 col-md-12 col-lg-5 col-xl-3 text-center d-flex d-xl-flex align-items-center justify-content-xl-end align-items-xl-center"><a href="#"><img class="img-fluid" style="width: 72px;" src="assets/img/joystick.svg"></a></div>
                         <div class="col">
                             <h3 class="name" style="color: rgb(1,95,110);">Videojuegos</h3>
@@ -142,20 +473,28 @@
         </div>
     </div>
     <div></div>
-    <div class="footer-dark" style="background-color: #12353b;padding: 3%;">
+    <div class="footer" style="background-color: #EEEDEB;padding: 3%;">
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-9 col-xl-6 d-xl-flex align-items-xl-start"><img style="width: 70%;" src="assets/img/logo5.png"></div>
+                    <div class="col-12 col-lg-9 col-xl-6 d-xl-flex align-items-xl-center"><img style="width: 150px;" src="assets/img/logo.png">                    
+
+                    </div>
                     <div class="col-12 col-sm-6 col-md-3 col-xl-6 text-left justify-content-center item" style="padding: 3%;">
-                        <h3 class="d-flex justify-content-center justify-content-xl-start" style="font-weight: bold;">Navegación</h3>
-                        <ul class="nav nav-tabs flex-column d-flex justify-content-center align-items-center mx-auto align-items-xl-start">
+                        <h3 class="d-flex justify-content-center justify-content-xl-center" style="font-weight: bold;">Navegación</h3>
+                        <ul class="nav nav-tabs flex-column d-flex justify-content-center align-items-center mx-auto align-items-xl-center footer-nav">
                             <li class="nav-item"><a class="nav-link" href="#dos">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="#dos">Acerca de</a></li>
                             <li class="nav-item"><a class="nav-link" href="#tres">Portafolio</a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#contacto" href="#">Contacto</a></li>
                         </ul>
                     </div>
+                       <div class="text-center col">
+                            <a href="https://github.com/IgnacioCatron/"><i class="fa fa-github border-white" style="padding: 1%;font-size: 22px;color: rgb(1,161,185);"></i></a>
+                            <a href="https://www.linkedin.com/in/ignaciocatron/"><i class="fa fa-linkedin-square border-white" style="padding: 1%;font-size: 22px;color: rgb(1,161,185);"></i></a>
+                    
+                        </div>
+
                 </div>
             </div>
         </footer>
@@ -163,18 +502,58 @@
     <div class="text-center" style="background-color: #0e262a;">
         <div class="row" style="margin: 0;padding: 1%;">
             <div class="col-12 col-xl-11 d-xl-flex justify-content-xl-center align-items-xl-center">
-                <p style="color: rgb(78,141,150);margin: 0;font-size: 14px;">© 2021 Todos los derechos reservados</p>
+                <p style="color: rgb(78,141,150);margin: 0;font-size: 14px;">© 2021 - 2024 Todos los derechos reservados</p>
             </div>
-            <div class="col text-center"><a href="#"><i class="fa fa-github border-white" style="padding: 1%;font-size: 22px;color: rgb(1,161,185);"></i></a><a href="#"><i class="fa fa-linkedin-square border-white" style="padding: 1%;font-size: 22px;color: rgb(1,161,185);"></i></a>
-                <a
-                    href="#"><i class="fa fa-instagram border-white" style="padding: 1%;font-size: 22px;color: rgb(1,161,185);"></i></a>
-            </div>
+      
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="assets/js/script.min.js"></script>
+
+    <script>
+        const quotes = [
+    "El único modo de hacer un gran trabajo es amar lo que haces. - Steve Jobs",
+    "La mejor manera de predecir el futuro es inventarlo. - Alan Kay",
+    "El éxito es la suma de pequeños esfuerzos repetidos día tras día. - Robert Collier",
+    "No dejes que el miedo a perder sea mayor que la emoción de ganar. - Robert Kiyosaki",
+    "La vida es lo que pasa mientras estás ocupado haciendo otros planes. - John Lennon",
+    "El único límite a nuestros logros de mañana es nuestra duda de hoy. - Franklin D. Roosevelt",
+    "La mejor manera de empezar es dejar de hablar y empezar a hacer. - Walt Disney",
+    "El éxito no es definitivo, el fracaso no es fatal: lo que cuenta es el valor para continuar. - Winston Churchill",
+    "El futuro pertenece a aquellos que creen en la belleza de sus sueños. - Eleanor Roosevelt",
+    "El éxito es ir de fracaso en fracaso sin perder el entusiasmo. - Winston Churchill",
+    "La mejor venganza es un éxito rotundo. - Frank Sinatra",
+    "No cuentes los días, haz que los días cuenten. - Muhammad Ali",
+    "El mejor momento para plantar un árbol fue hace veinte años. El segundo mejor momento es ahora. - Proverbio chino",
+    "Tu tiempo es limitado, así que no lo desperdicies viviendo la vida de alguien más. - Steve Jobs",
+    "La vida es 10% lo que te sucede y 90% cómo reaccionas a ello. - Charles R. Swindoll",
+    "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito. - Albert Schweitzer",
+    "El fracaso es una gran oportunidad para empezar otra vez con más inteligencia. - Henry Ford",
+    "Cree que puedes y ya estás a medio camino. - Theodore Roosevelt",
+    "No puedes vencer a la persona que nunca se rinde. - Babe Ruth",
+    "Lo que no te mata te hace más fuerte. - Friedrich Nietzsche",
+    "El único lugar donde el éxito viene antes que el trabajo es en el diccionario. - Vidal Sassoon",
+    "La única forma de hacer un gran trabajo es amar lo que haces. - Steve Jobs",
+    "El coraje es la resistencia al miedo, el dominio del miedo, no la ausencia del miedo. - Mark Twain",
+    "La motivación es lo que te pone en marcha. El hábito es lo que hace que sigas. - Jim Ryun",
+    "La única limitación para nuestra realización del mañana serán nuestras dudas de hoy. - Franklin D. Roosevelt",
+    "La vida es realmente simple, pero insistimos en hacerla complicada. - Confucio",
+    "La mejor preparación para mañana es hacer tu mejor esfuerzo hoy. - H. Jackson Brown Jr.",
+    "La mayor gloria en la vida no reside en nunca caer, sino en levantarnos cada vez que caemos. - Nelson Mandela"
+        ];
+
+        function showRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const randomQuote = quotes[randomIndex];
+            document.getElementById('quote').style.display = "block";
+
+            document.getElementById('quote').innerText = randomQuote;
+        }
+    </script>
+
+
 </body>
 
 </html>
