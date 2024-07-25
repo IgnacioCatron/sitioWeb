@@ -69,6 +69,7 @@
     .heading {
             display: flex!important;
             justify-content: center;
+            flex-direction: column;
     }
 
     .centrar-logo {
