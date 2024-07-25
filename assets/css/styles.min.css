@@ -91,6 +91,10 @@
         font-size: 1em;
         color: #001619;
 }
+	    .habilidades strong {
+        color: cyan;
+        font-size: 0.8em;
+        }
 
 #uno {
     padding: 2%;
